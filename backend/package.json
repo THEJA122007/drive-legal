@@ -1,0 +1,32 @@
+{
+  "name": "drive-legal-backend",
+  "version": "1.0.0",
+  "description": "AI-powered traffic law assistant for BIMSTEC countries",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "gemini",
+    "traffic-laws",
+    "bimstec",
+    "express",
+    "geolocation",
+    "ai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.16.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

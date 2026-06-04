@@ -1,0 +1,69 @@
+
+### Health Check
+GET http://localhost:3001
+
+###
+
+### Test Location API
+POST http://localhost:3001/api/location
+Content-Type: application/json
+
+{
+  "latitude": 13.045618,
+  "longitude": 80.183815
+}
+
+###
+
+### Test Thailand Coordinates
+POST http://localhost:3001/api/location
+Content-Type: application/json
+
+{
+  "latitude": 13.7563,
+  "longitude": 100.5018
+}
+
+###
+### Country Info Test
+POST http://localhost:3001/api/country
+Content-Type: application/json
+
+{
+  "country": "Thailand"
+}
+
+### Violation Test
+POST http://localhost:3001/api/violation
+Content-Type: application/json
+
+{
+  "country": "Thailand",
+  "violation": "Speeding"
+}
+
+### Compare Thailand vs Nepal
+POST http://localhost:3001/api/compare
+Content-Type: application/json
+
+{
+  "country1": "Thailand",
+  "country2": "Nepal"
+}
+
+### Driving Checklist - Sri Lanka
+POST http://localhost:3001/api/checklist
+Content-Type: application/json
+
+{
+  "destination": "Sri Lanka"
+}
+
+### Chat Test
+POST http://localhost:3001/api/chat
+Content-Type: application/json
+
+{
+  "country": "Thailand",
+  "question": "Can tourists drive in Thailand with an International Driving Permit?"
+}
